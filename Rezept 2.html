@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt/Rezept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+    <script src="script4.js"></script>
+    <div w3-include-html="./templates/header.html"></div>
+
+    <main class="body">
+        <div class="menu">
+            <h1>Frikadellen</h1>
+            <img src="./img/meatballs-2946482_1280.jpg" alt="menuimg">
+        </div>
+        <div class="menusubtitle">
+            <div class="menusubtitleicon">
+                <img src="./img/icons/clock-regular.svg" alt="">15 Min.
+            </div>
+            <div class="menusubtitleicon">
+                <img src="./img/icons/brain-solid.svg" alt="">simpel
+            </div>
+            <div class="menusubtitleicon">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="">21.06.2023
+            </div>
+        </div>
+
+        <div class="selection">
+            Zutaten für
+            <div class="portions">
+                <input id="inputField" placeholder="4" min="1" max="10" value="4" type="number"><button
+                    onclick="calPortions()">Portionen</button>
+            </div>
+        </div>
+        <a id="alertInput" class="alert"></a>
+
+        <table id="table">
+            <tr>
+                <td><span id="ingredient1">1</span> Brötchen</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient2">1</span> Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient3">1</span> Ei(er)</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient4">500</span> g, Hackfleisch, gemischtes</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient5">1</span> TL, Salz</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient6">1</span> TL, Senf</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient7">1</span> TL, Majoran, getrocknet </td>
+            </tr>
+            <tr>
+                <td><span id="ingredient8">1</span> TL, Paprikapulver</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient9">2</span> TL, Petersilie, getrocknet</td>
+            </tr>
+            <tr>
+                <td>Salz und Pfeffer nach Geschmack</td>
+            </tr>
+            <tr>
+                <td><span id="ingredient10">1</span> TL, Maggi</td>
+            </tr>
+        </table>
+
+        <h2>Zubereitung</h2>
+        <div class="menusubtitle">
+            <div class="menusubtitleicon">
+                <img src="./img/icons/clock-regular.svg" alt="">ca. 15 Minuten
+            </div>
+
+            <div class="menusubtitleicon">
+                <img src="./img/icons/clock-regular.svg" alt=""> Gesamtzeit 15 Minuten
+            </div>
+        </div>
+
+        <span class="preparation">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dolores est aut ex fugit porro
+                ipsum, quam repellendus corporis. Tempora, odit sed! Dolor, aperiam officia! Eum labore facilis dolores
+                possimus reiciendis a inventore error, sed, atque odit modi quas velit, sint animi dignissimos eos ea
+                voluptatem. Blanditiis, eligendi laboriosam?</p>
+        </span>
+
+        <h4>Rezept erstellt von</h4>
+        <div class="creatordiv">
+            <img class="creatorimg" src="./#" alt="creatorimg">
+
+            <span class="creatorname">Name</span>
+        </div>
+
+    </main>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOCHWELT/KONTAKT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="includeHTML()">
+    <script src="script.js"></script>
+    <div w3-include-html="./templates/header.html"></div>
+
+    <main>
+        <form class="contactform" action="https://kochwelt-600.developerakademie.net/Kochwelt/templates/send_mail.php"
+            method="POST">
+            <input required class="contactinput" name="name" placeholder="Dein Name">
+
+            <textarea required name="message" placeholder="Deine Nachricht an uns"></textarea>
+
+            <button type="submit">Mail senden</button>
+        </form>
+    </main>
+    
+    <div w3-include-html="./templates/footer.html"></div>
+</body>
+
+</html>

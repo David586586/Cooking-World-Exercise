@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt/Startseite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+    <script src="script.js"></script>
+    <div w3-include-html="./templates/header.html"></div>
+
+    <main>
+        <div class="aot">
+            <a href="./Rezept 1.html"><img src="./img/Bolognese.png" alt="menuimg"></a>
+            <div>
+                <h2>Schmackhafte Bolognese</h2>
+                <span>Los geht's! Ihre hausgemachte Bolognese ist nur 30 Minuten entfernt. Mit wenig Aufwand kochen Sie
+                    ein fantastisches Mittagsgericht, das begeistert.</span>
+
+                <a href="./Rezept 1.html"><button>Rezept öffnen</button></a>
+            </div>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Lust auf was neues?</h3>
+            <div class="recipelinks">
+
+                <a href="./Rezept 2.html">
+                    <figure>
+                        <img src="./img/meatballs-2946482_1280.jpg" alt="menuimg">
+                        <figcaption>Harrys legendäre Frikadellen</figcaption>
+                    </figure>
+                </a>
+                <a href="./Rezept 4.html">
+                    <figure>
+                        <img src="./img/lasagne-made-in-italy.jpg" alt="menuimg">
+                        <figcaption>Feierabend-Lasagne</figcaption>
+                    </figure>
+                </a>
+                <a href="./Rezept 3.html">
+                    <figure>
+                        <img src="./img/pfannkuchen.jpg" alt="menuimg">
+                        <figcaption>Pfannkuchen-Glück</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+
+        <h3>Pfanne vs Wok - Was ist besser?</h3>
+        <div class="pan">
+            <div class="pantext">
+                <span>
+                    <p>Die Zubereitung leckerer Gerichte bietet viele Wege – doch welche Kochutensilie ist die richtige?
+                        Der Wok glänzt beim schnellen Garen von Gemüse und Fleisch bei hohen Temperaturen. Seine
+                        spezielle Form sorgt für eine gleichmäßige Erhitzung und benötigt dabei weniger Öl. Die Pfanne
+                        ist hingegen der Alleskönner: Sie ist vielseitiger und perfekt für Gerichte von Steaks bis
+                        Eiern. Zudem ist sie in der Regel einfacher zu reinigen als ein Wok. Die Wahl hängt letztendlich
+                        von Ihren persönlichen Vorlieben und dem Gericht ab, das Sie zubereiten
+                        möchten.</p>
+                </span>
+            </div>
+            <img src="./img/wok.jpg" alt="Pfanne vs Wok">
+        </div>
+    </main>
+
+    <div w3-include-html="./templates/footer.html"></div>
+</body>
+
+</html>
